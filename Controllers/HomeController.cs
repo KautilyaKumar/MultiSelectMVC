@@ -118,5 +118,11 @@ namespace MultiSelectExample.Controllers
             // the above values is 100
             return View();
         }
+
+        public ActionResult NewChanges()
+        {
+            return View();
+        }
+
     }
 }
