@@ -1,0 +1,33 @@
+﻿@model IEnumerable<MultiSelectExample.Models.Profile>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProfilerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProfilerNumber)
+        </th>
+        <th><input type="button" class="btn btn-primary" value="Add" onclick="location.href='@Url.Action("Add","Home")'" /></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProfilerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProfilerNumber)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProfileID }) 
+        </td>
+    </tr>
+}
+
+</table>
