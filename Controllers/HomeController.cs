@@ -119,10 +119,5 @@ namespace MultiSelectExample.Controllers
             return View();
         }
 
-        public ActionResult NewChanges()
-        {
-            return View();
-        }
-
     }
 }
