@@ -121,8 +121,11 @@ namespace MultiSelectExample.Controllers
 
         public ActionResult NewChanges()
         {
+            int x = 100; // x is 100;
             return View();
         }
+
+
 
     }
 }
