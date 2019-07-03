@@ -113,8 +113,9 @@ namespace MultiSelectExample.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
+            ViewBag.Message = "Your contact page!!!!!";
+            int x = 100;
+            // the above values is 100
             return View();
         }
     }
